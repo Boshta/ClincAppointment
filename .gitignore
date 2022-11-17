@@ -6,3 +6,6 @@ ClincAppointment/ClincAppointment/obj
 *.user
 ClincAppointment/DAL/bin
 ClincAppointment/DAL/obj
+ClincAppointment/ClincAppointmentTests/bin
+ClincAppointment/ClincAppointmentTests/obj
+ClincAppointment/packages
