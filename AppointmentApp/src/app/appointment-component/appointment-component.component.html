@@ -1,0 +1,44 @@
+<div *ngIf="!submitted" class="container" style="padding: 20px;" >
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <form [formGroup]="appointmnetForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="patientName">Patient name:</label>
+              <input
+                type="text"
+                id="patientName"
+                class="form-control"
+                formControlName="patientName">
+                
+            </div>
+            <!-- <span *ngIf="!appointmnetForm.get('patientName').valid && appointmnetForm.get('patientName').touched">
+                <span *ngIf="appointmnetForm.get('patientName').errors['required']">Please enter a valid data!</span>
+
+                
+              </span> -->
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                id="phone"
+                class="form-control"
+                formControlName="phone">
+                
+            </div>
+
+            <div class="form-group">
+                <label for="note">Note</label>
+                <textarea class="form-control"
+                formControlName="note">
+
+                </textarea>
+                  
+              </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+  </div>
+
+  <span *ngIf="submitted"><p>You successfuly created an appointment </p> </span>
+  
