@@ -16,7 +16,7 @@ namespace DAL.Models
 
         public string PatientName { get; set; }
         public string Phone { get; set; }
-        public string Note { get; set; }
+        public string? Note { get; set; }
         public DateTime AppointmentDate { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime ModificationDate { get; set; }
